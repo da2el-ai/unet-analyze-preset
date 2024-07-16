@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>U-Net Analyze Preset Form</title>
+    <link href="./style.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>U-Net Analyze Preset Generator</h1>
+
+    <div class="l-form-label">
+      <div class="l-form-label__row">
+        <label for="name">名前</label>
+        <input type="text" id="name" name="name" required style="width:10rem" value="analyse">
+      </div>
+      <div class="l-form-label__row">
+        <label for="target-layer">ターゲット層</label>
+        <div>
+          <input type="text" id="target-layer" name="target-layer" value="1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1"
+            required style="width:23em; font-size:1.2rem"><br>
+          <button class="target-layer-preset" data-layer="26">SD1.5</button>
+          <button class="target-layer-preset" data-layer="20">SDXL</button><br>
+          例：0,0,0,1,1,1,0,0,.....<br>
+          1 = Target / 0 = Not target
+        </div>
+      </div>
+      <div class="l-form-label__row">
+        <label for="combination-count">組み合わせ数</label>
+        <input type="number" id="combination-count" name="combination-count" required min="1" style="width:3rem"
+          value="1">
+      </div>
+    </div>
+    <!-- /.l-form-label -->
+
+    <div style="margin-top:1rem">
+      <button id="submit">生成</button>
+    </div>
+
+    <section style="margin-top:1rem">
+      <textarea id="result" style="width:100%; height:10rem"></textarea>
+
+      <div style="margin-top:1rem">
+        <button id="copy">内容をコピー</button>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+
+  </body>
+
+</html>

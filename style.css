@@ -1,0 +1,15 @@
+input[type="text"] {
+  padding: 0.2rem;
+}
+
+.l-form-label {
+  display: grid;
+  grid-template-columns: 10rem max-content;
+  gap: 0.5rem 0;
+}
+
+.l-form-label__row {
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: span 2;
+}
