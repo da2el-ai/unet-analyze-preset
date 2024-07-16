@@ -2,6 +2,8 @@
 
 SuperMerger用の階層調査用プリセットを作成するツール。
 
+[GitHub Page で公開してます。](https://da2el-ai.github.io/unet-analyze-preset/)
+
 ```
 analyse_0:1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
 analyse_1:0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
