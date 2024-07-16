@@ -10,7 +10,7 @@ const initTargetLayer = () => {
       const layerCount = parseInt(this.getAttribute("data-layer"), 10);
       if (isNaN(layerCount)) return;
 
-      const layers = new Array(layerCount).fill("0");
+      const layers = new Array(layerCount).fill("1");
       targetLayerInput.value = layers.join(",");
     });
   });
